@@ -25,12 +25,12 @@ with st.form(key='prediction_form'):
         Pregnancies = st.number_input('Input nilai Pregnancies', min_value=0, max_value=20, step=1, format='%d')
         Glucose = st.number_input('Input nilai Glucose', min_value=0, max_value=300, step=1, format='%d')
         BloodPressure = st.number_input('Input nilai Blood Pressure', min_value=0, max_value=200, step=1, format='%d')
-        Insulin = st.number_input('Input nilai Insulin', min_value=0, max_value=1000, step=1, format='%d')
-        DiabetesPedigreeFunction = st.number_input('Input nilai Diabetes Pedigree Function', min_value=0.0, max_value=3.0, step=0.01, format='%.2f')
-
-    with col2:
         SkinThickness = st.number_input('Input nilai Skin Thickness', min_value=0, max_value=100, step=1, format='%d')
         BMI = st.number_input('Input nilai BMI', min_value=0.0, max_value=70.0, step=0.1, format='%.1f')
+
+    with col2:
+        Insulin = st.number_input('Input nilai Insulin', min_value=0, max_value=1000, step=1, format='%d')
+        DiabetesPedigreeFunction = st.number_input('Input nilai Diabetes Pedigree Function', min_value=0.0, max_value=3.0, step=0.01, format='%.2f')
         Age = st.number_input('Input nilai Age', min_value=0, max_value=120, step=1, format='%d')
 
     # Tombol untuk prediksi di luar kolom dengan warna
