@@ -1,6 +1,5 @@
 import pickle
 import streamlit as st
-from PIL import Image
 
 # Membaca model
 diabetes_model = pickle.load(open('diabetes_model.sav', 'rb'))
@@ -11,10 +10,10 @@ st.markdown("<h1 style='text-align: center; color: #FF6347;'>Prediksi Diabetes</
 # Menambahkan gambar header (opsional)
 # st.image('header_image.jpg', use_column_width=True)
 
-# Deskripsi singkat dengan warna
+# Deskripsi singkat dengan ukuran font kecil dan warna latar belakang
 st.markdown("""
     <div style='background-color: #f0f8ff; padding: 10px; border-radius: 10px;'>
-    <h3 style='text-align: center;'>Aplikasi ini akan memprediksi kemungkinan seseorang terkena diabetes berdasarkan beberapa parameter medis. Silakan masukkan data pada kolom di bawah untuk melakukan prediksi.</h3>
+    <p style='text-align: center; font-size: 14px;'>Aplikasi ini akan memprediksi kemungkinan seseorang terkena diabetes berdasarkan beberapa parameter medis. Silakan masukkan data pada kolom di bawah untuk melakukan prediksi.</p>
     </div>
     """, unsafe_allow_html=True)
 
